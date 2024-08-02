@@ -18,20 +18,49 @@ console.log(greaterThanTen([1, 2, 3, 11, 12, 13]));
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
-function bWords(words) {}
+function bWords(words) {
+  let result = [];
+
+  for (let i = 0; i < words.length; i++){
+      if (words[i].startsWith(`b`) || words[i].startsWith(`B`)){
+          result.push(words[i]);
+      }
+  }
+  return result;
+}
+
+console.log(bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']));
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
-function extend(originalArray, additionalItems) {}
+function extend(originalArray, additionalItems) {
+  for (let i = 0; i < additionalItems.length; i++){
+      originalArray.push(additionalItems[i]);
+  }
+  return originalArray;
+}
+
+console.log(extend([1, 2, 3], [4, 5, 6]));
 
 // Return an array of all items with the given length.
 // Ex.:
 //   itemsWithLength(['a', 'bbb', 'cccc', 'dddddd', 'eee'], 3);
 //   => ['bbb', 'eee']
-function itemsWithLength(items, length) {}
+function itemsWithLength(items, length) {
+  let result = [];
+
+  for (let i = 0; i < items.length; i++) {
+      if (items[i].length === length) {
+          result.push(items[i]);
+      }
+  }
+  return result;
+}
+
+console.log(itemsWithLength(['a', 'bbb', 'cccc', 'dddddd', 'eee'], 3));
 
 // Return an array with every other element from the input array (start with index 0).
 // Ex.:
