@@ -2,7 +2,7 @@
 
 > To select an answer for the multiple choice questions, put an `x` inside the square brackets (`[ ]`) like this:
 > ```md
-> - [ ] This is the answer!
+> - [x] This is the answer!
 > ```
 >
 > **Pro tip:** You might find it easier to read the assessment through VS Code's Markdown Preview. To view the preview for this document, open the Command Palette (<kbd>Cmd+Shift-P</kbd> or <kbd>Ctrl+Shift-P</kbd>) and run `Markdown: Open Preview to the Side`.
@@ -14,7 +14,7 @@
 Which statement is true about JavaScript?
 
 - [ ] **A.** JavaScript is case insensitive, so `true` is the same as `True`.
-- [ ] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
+- [x] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
 - [ ] **C.** JavaScript requires you to end all statements with a semicolon (`;`).
 - [ ] **D.** All of the above are true.
 - [ ] **E.** None of the above are true.
@@ -31,11 +31,11 @@ Which of these lines of code will cause `sum` to have a value of `2`? You can se
 answer.
 
 - [ ] **A.** `sum++`
-- [ ] **B.** `sum += 1`
-- [ ] **C.** `sum = sum + 1`
+- [x] **B.** `sum += 1`
+- [x] **C.** `sum = sum + 1`
 - [ ] **D.** All of the above
-- [ ] **E.** Some of the above
-
+- [x] **E.** Some of the above
+<!-- sum++ = 1. Flip it to be ++sum in order to = 2 -->
 ### A.3. What's the output?
 
 What's the output of the program below?
@@ -45,11 +45,11 @@ const result = 1 < 100 || 'hello' === 'hi';
 console.log(result);
 ```
 
-- [ ] **A.** `true`
+- [x] **A.** `true`
 - [ ] **B.** `false`
 - [ ] **C.** `undefined`
 - [ ] **D.** N/A because the code has an error
-
+<!-- The code is true because at least one of the conditions is true -->
 ### A.4. What's the output?
 
 What's the output of the program below?
@@ -64,10 +64,10 @@ if (word) {
 ```
 
 - [ ] **A.** `yay!`
-- [ ] **B.** `no :(`
+- [x] **B.** `no :(`
 - [ ] **C.** An empty line
 - [ ] **D.** N/A because the code has an error
-
+<!-- The strind is empty which is falsy resulting in else -->
 ### A.5. Fill in the blank
 
 The code below is incomplete. There's a blank space inside the `for` loop:
@@ -88,7 +88,7 @@ cherry
 ```
 
 - [ ] **A.** `const fruit in fruits`
-- [ ] **B.** `const fruit of fruits`
+- [x] **B.** `const fruit of fruits`
 - [ ] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
 - [ ] **D.** None of the above
 
