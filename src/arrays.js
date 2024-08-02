@@ -129,8 +129,6 @@ function findIndex(items, value) {
       }
   }
   return result[0];
-
-
 }
 
 console.log(findIndex(['a', 'b', 'c', 'a', 'b', 'c'], 'c'))
