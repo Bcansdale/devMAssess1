@@ -70,16 +70,16 @@ function stickyCase(string) {
       .split('')
       .map(function(char, index) {
           if (index % 2 === 0) {
-              return char.toUpperCase();
-          } else {
               return char.toLowerCase();
+          } else {
+              return char.toUpperCase();
           }
       })
       .join('');
 }
 
-// Example usage:
-console.log(stickyCase('hello world')); // Output: 'HElLo WoRlD'
+console.log(stickyCase('hello world')); 
+// ChatGPT solution: still cant get it to work..... Got working.... had to switch returns...
 
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
@@ -94,7 +94,23 @@ console.log(stickyCase('hello world')); // Output: 'HElLo WoRlD'
 // Ex.:
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
-function leetspeak(string) {}
+// Return the given string in leetspeak. Leetspeak is a modified version of
+// English where characters are replaced by numbers or symbols. For this
+// version of leetspeak, replace the following characters:
+//   a => 4
+//   e => 3
+//   i => 1
+//   o => 0
+//   s => 5
+//   t => 7
+// Ex.:
+//   leetspeak('javascript');
+//   => 'j4v45cr1p7'
+function leetspeak(string) {
+  return string.replace(/a/g, '4').replace(/e/g, '3').replace(/i/g, '1').replace(/o/g, '0').replace(/s/g, '5').replace(/t/g, '7');
+}
+
+console.log(leetspeak('javascript'));
 
 export {
   approximatelyEqual,
